@@ -146,7 +146,8 @@ function renderContent(data) {
     document.body.appendChild(instaScript);
 }
 
-fetch('data.json')
+// Cache-bust so edits to data.json show up immediately instead of waiting out the CDN/browser cache
+fetch('data.json?v=' + Date.now(), { cache: 'no-store' })
     .then(function (res) { return res.json(); })
     .then(renderContent)
     .catch(function (err) { console.error('Failed to load data.json', err); });
