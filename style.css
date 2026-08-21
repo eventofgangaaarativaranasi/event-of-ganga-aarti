@@ -1084,3 +1084,62 @@ table td:nth-child(3) {
         font-size: 0.85rem;
     }
 }
+
+/* Floating Action Buttons (WhatsApp / Instagram) */
+.floating-actions {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    z-index: 1500;
+}
+
+.fab-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fab-pop 0.4s ease-out;
+}
+
+.fab-btn:hover {
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.fab-whatsapp {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.fab-instagram {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+@keyframes fab-pop {
+    from { opacity: 0; transform: scale(0.5); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 480px) {
+    .floating-actions {
+        right: 0.85rem;
+        bottom: 0.85rem;
+        gap: 0.7rem;
+    }
+
+    .fab-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
+    }
+}
+
