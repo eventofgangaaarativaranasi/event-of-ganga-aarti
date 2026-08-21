@@ -10,14 +10,8 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">🕉️ Ganga Aarti Varanasi</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#offerings">Offerings</a></li>
-                <li><a href="#instagram">Instagram</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-brand" id="nav-brand"></div>
+            <ul class="nav-links" id="nav-links"></ul>
             <div class="nav-actions">
                 <button class="sound-btn" id="sound-toggle" aria-label="Disable background music" title="Disable music">🎵</button>
                 <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -31,52 +25,27 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-            <source src="aarti-background.mp4" type="video/mp4">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" id="hero-video">
             Your browser does not support the video tag.
         </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Ganga Aarti Varanasi</h1>
-            <p>Experience the Divine Evening Ceremony on the Holy Ganges River</p>
-            <p class="tagline">A Spiritual Journey at the Heart of Varanasi</p>
+            <h1 id="hero-title"></h1>
+            <p id="hero-subtitle"></p>
+            <p class="tagline" id="hero-tagline"></p>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Ganga Aarti</h2>
-            <p>
-                The Ganga Aarti is a sacred Hindu ritual performed daily on the banks of the River Ganges in Varanasi. 
-                This mesmerizing ceremony involves the offering of light to the goddess Ganga, performed with grace and devotion. 
-                Thousands of pilgrims and visitors gather to witness this spiritual spectacle at sunset, experiencing the divine energy 
-                that flows through the sacred waters of the Ganges.
-            </p>
-            <div class="features">
-                <div class="feature-card">
-                    <h3>🙏 Spiritual Experience</h3>
-                    <p>Connect with ancient traditions and spiritual wisdom</p>
-                </div>
-                <div class="feature-card">
-                    <h3>✨ Sacred Ritual</h3>
-                    <p>Witness the divine offering of light to the Ganges</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🕯️ Traditional Ceremony</h3>
-                    <p>Experience rituals passed down through generations</p>
-                </div>
-            </div>
-            
+            <h2 id="about-heading"></h2>
+            <p id="about-description"></p>
+            <div class="features" id="features-container"></div>
+
             <div class="services-section">
-                <h3>Our Services</h3>
-                <ul class="services-list">
-                    <li>💒 Wedding Ganga Aarti</li>
-                    <li>🕯️ Maha Ganga Aarti Setup</li>
-                    <li>👨‍🙏 Pandit Arrangement & Guidance</li>
-                    <li>🎭 Cultural & Religious Events</li>
-                    <li>📿 Vedic Rituals & Pujan Ceremonies</li>
-                </ul>
+                <h3 id="services-heading"></h3>
+                <ul class="services-list" id="services-list"></ul>
             </div>
         </div>
     </section>
@@ -84,70 +53,28 @@
     <!-- Offerings Section -->
     <section id="offerings" class="offerings">
         <div class="container">
-            <h2>Our Offerings & Pricing</h2>
-            <p class="section-intro">Choose from our curated offerings to enhance your spiritual journey</p>
+            <h2 id="offerings-heading"></h2>
+            <p class="section-intro" id="offerings-intro"></p>
             
             <div class="offerings-wrapper">
                 <div class="offerings-image">
-                    <img src="offerings-image.jpeg" alt="Ganga Aarti Offerings" class="offering-photo">
+                    <img id="offering-photo" class="offering-photo" alt="">
                 </div>
                 
                 <div class="offerings-content">
                     <div class="pricing-table">
                         <table>
                     <thead>
-                        <tr>
-                            <th>Offering</th>
-                            <th>Description</th>
-                            <th>Price (INR)</th>
-                            <th>Details</th>
-                        </tr>
+                        <tr id="offerings-columns"></tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>🙏 Basic Package</td>
-                            <td>4 Pandits with complete ceremony</td>
-                            <td>₹41,000</td>
-                            <td>30 min ceremony, basic sound system</td>
-                        </tr>
-                        <tr>
-                            <td>👑 Premium Package</td>
-                            <td>6 Pandits with enhanced setup</td>
-                            <td>₹65,000</td>
-                            <td>40 min ceremony, professional sound system, flower decoration</td>
-                        </tr>
-                        <tr>
-                            <td>✨ Royal Package</td>
-                            <td>9 Pandits with grand ceremony</td>
-                            <td>₹1,01,000</td>
-                            <td>45-60 min ceremony, full decoration, special arrangements</td>
-                        </tr>
-                        <tr>
-                            <td>💒 Wedding Ganga Aarti</td>
-                            <td>Special ceremony for wedding events</td>
-                            <td>Custom</td>
-                            <td>Complete wedding celebration with Ganga Aarti</td>
-                        </tr>
-                        <tr>
-                            <td>🎉 Maha Ganga Aarti Setup</td>
-                            <td>Grand ceremonial setup</td>
-                            <td>Custom</td>
-                            <td>Large-scale Aarti for major events</td>
-                        </tr>
-                        <tr>
-                            <td>👨‍🙏 Pandit Arrangement</td>
-                            <td>Individual pandit services</td>
-                            <td>₹11,000/pandit</td>
-                            <td>Available for 1, 4, 6, or 9 pandits</td>
-                        </tr>
-                    </tbody>
+                    <tbody id="offerings-tbody"></tbody>
                 </table>
                     </div>
                 </div>
             </div>
 
             <div class="offering-info">
-                <p><strong>📌 Note:</strong> All packages include participation in the sacred Ganga Aarti ceremony with experienced pandits. Prices listed are for services within 1000 km range of Varanasi. We provide services all over India - for locations beyond 1000 km, custom pricing applies. Please contact us for details.</p>
+                <p id="offerings-note"></p>
             </div>
         </div>
     </section>
@@ -155,86 +82,31 @@
     <!-- Instagram Feed Section -->
     <section class="instagram-section" id="instagram">
         <div class="container">
-            <h2>Latest on Instagram</h2>
-            <p class="section-intro">Glimpses of divine ceremonies from <a class="insta-handle" href="https://www.instagram.com/ganga_aarati_wedding_event" target="_blank" rel="noopener">@ganga_aarati_wedding_event</a></p>
+            <h2 id="instagram-heading"></h2>
+            <p class="section-intro" id="instagram-intro"></p>
 
-            <div class="instagram-grid">
-
-                <!-- Playable inline reels first -->
-                <div class="insta-embed-wrap">
-                    <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DbGS4jWSonS/"
-                        data-instgrm-version="14">
-                        <a href="https://www.instagram.com/reel/DbGS4jWSonS/">View this reel on Instagram</a>
-                    </blockquote>
-                </div>
-
-                <div class="insta-embed-wrap">
-                    <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/CmQeR_uot-q/"
-                        data-instgrm-version="14">
-                        <a href="https://www.instagram.com/reel/CmQeR_uot-q/">View this reel on Instagram</a>
-                    </blockquote>
-                </div>
-
-                <!-- Watch on Instagram reels below -->
-                <div class="insta-embed-wrap">
-                    <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DarVvqiSxws/"
-                        data-instgrm-version="14">
-                        <a href="https://www.instagram.com/reel/DarVvqiSxws/">View this reel on Instagram</a>
-                    </blockquote>
-                </div>
-
-                <div class="insta-embed-wrap">
-                    <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/Da-j9uJyeQ3/"
-                        data-instgrm-version="14">
-                        <a href="https://www.instagram.com/reel/Da-j9uJyeQ3/">View this reel on Instagram</a>
-                    </blockquote>
-                </div>
-
-                <div class="insta-embed-wrap">
-                    <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/CmMAVpNA4eD/"
-                        data-instgrm-version="14">
-                        <a href="https://www.instagram.com/reel/CmMAVpNA4eD/">View this reel on Instagram</a>
-                    </blockquote>
-                </div>
-
-                <div class="insta-embed-wrap">
-                    <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/CmYEdMtI27V/"
-                        data-instgrm-version="14">
-                        <a href="https://www.instagram.com/reel/CmYEdMtI27V/">View this reel on Instagram</a>
-                    </blockquote>
-                </div>
-
-            </div>
+            <div class="instagram-grid" id="instagram-grid"></div>
 
             <div class="instagram-cta">
-                <a class="insta-follow-btn" href="https://www.instagram.com/ganga_aarati_wedding_event" target="_blank" rel="noopener">
-                    📸 &nbsp;Follow us on Instagram
-                </a>
+                <a class="insta-follow-btn" id="instagram-follow-link" target="_blank" rel="noopener"></a>
             </div>
         </div>
     </section>
-    <script async src="https://www.instagram.com/embed.js"></script>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p class="section-intro">Book your offering or ask us any questions</p>
+            <h2 id="contact-heading"></h2>
+            <p class="section-intro" id="contact-intro"></p>
             
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Us</h3>
-                    <p class="contact-person">👤 <strong>Raghavnand Pathak</strong></p>
-                    <p>📍 Assi Ghat, Varanasi, Uttar Pradesh</p>
-                    <p>📱 Call/WhatsApp: <strong>8957704643</strong></p>
-                    <p>📧 Email: <strong>eventofgangaaarativaranasi@gmail.com</strong></p>
-                    <p class="contact-note">For bookings and inquiries, click the button below to reach us</p>
+                    <p class="contact-person" id="contact-person"></p>
+                    <p id="contact-address"></p>
+                    <p id="contact-phone"></p>
+                    <p id="contact-email"></p>
+                    <p class="contact-note" id="contact-note"></p>
                 </div>
 
                 <div class="contact-form">
@@ -243,7 +115,7 @@
                     </div>
                     <div class="social-links">
                         <p>Follow us on Instagram:</p>
-                        <a href="https://www.instagram.com/ganga_aarati_wedding_event" target="_blank" class="social-btn">📸 @ganga_aarati_wedding_event</a>
+                        <a id="contact-social-link" target="_blank" class="social-btn"></a>
                     </div>
                 </div>
             </div>
@@ -253,10 +125,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Ganga Aarti Varanasi. All rights reserved. 🙏</p>
-            <p>Experience the divine ceremony of light and devotion at the Sacred Ganges</p>
+            <p id="footer-line1"></p>
+            <p id="footer-line2"></p>
         </div>
     </footer>
+
+    <!-- Floating action buttons (WhatsApp / Instagram) -->
+    <div class="floating-actions" id="floating-actions"></div>
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,88 @@
+{
+  "site": {
+    "title": "Ganga Aarti Varanasi - Divine Ceremony",
+    "brand": "🕉️ Ganga Aarti Varanasi"
+  },
+  "nav": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Offerings", "href": "#offerings" },
+      { "label": "Instagram", "href": "#instagram" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "video": "aarti-background.mp4",
+    "title": "Ganga Aarti Varanasi",
+    "subtitle": "Experience the Divine Evening Ceremony on the Holy Ganges River",
+    "tagline": "A Spiritual Journey at the Heart of Varanasi"
+  },
+  "about": {
+    "heading": "About Ganga Aarti",
+    "description": "The Ganga Aarti is a sacred Hindu ritual performed daily on the banks of the River Ganges in Varanasi. This mesmerizing ceremony involves the offering of light to the goddess Ganga, performed with grace and devotion. Thousands of pilgrims and visitors gather to witness this spiritual spectacle at sunset, experiencing the divine energy that flows through the sacred waters of the Ganges.",
+    "features": [
+      { "icon": "🙏", "title": "Spiritual Experience", "text": "Connect with ancient traditions and spiritual wisdom" },
+      { "icon": "✨", "title": "Sacred Ritual", "text": "Witness the divine offering of light to the Ganges" },
+      { "icon": "🕯️", "title": "Traditional Ceremony", "text": "Experience rituals passed down through generations" }
+    ],
+    "servicesHeading": "Our Services",
+    "services": [
+      "💒 Wedding Ganga Aarti",
+      "🕯️ Maha Ganga Aarti Setup",
+      "👨‍🙏 Pandit Arrangement & Guidance",
+      "🎭 Cultural & Religious Events",
+      "📿 Vedic Rituals & Pujan Ceremonies"
+    ]
+  },
+  "offerings": {
+    "heading": "Our Offerings & Pricing",
+    "intro": "Choose from our curated offerings to enhance your spiritual journey",
+    "image": "offerings-image.jpeg",
+    "imageAlt": "Ganga Aarti Offerings",
+    "columns": ["Offering", "Description", "Price (INR)", "Details"],
+    "items": [
+      { "name": "🙏 Basic Package", "description": "4 Pandits with complete ceremony", "price": "Custom", "details": "30 min ceremony, basic sound system" },
+      { "name": "👑 Premium Package", "description": "6 Pandits with enhanced setup", "price": "Custom", "details": "40 min ceremony, professional sound system, flower decoration" },
+      { "name": "✨ Royal Package", "description": "9 Pandits with grand ceremony", "price": "Custom", "details": "45-60 min ceremony, full decoration, special arrangements" },
+      { "name": "💒 Wedding Ganga Aarti", "description": "Special ceremony for wedding events", "price": "Custom", "details": "Complete wedding celebration with Ganga Aarti" },
+      { "name": "🎉 Maha Ganga Aarti Setup", "description": "Grand ceremonial setup", "price": "Custom", "details": "Large-scale Aarti for major events" },
+      { "name": "👨‍🙏 Pandit Arrangement", "description": "Individual pandit services", "price": "Custom/pandit", "details": "Available for 1, 4, 6, or 9 pandits" }
+    ],
+    "note": "📌 Note: All packages include participation in the sacred Ganga Aarti ceremony with experienced pandits. Prices listed are for services within 1000 km range of Varanasi. We provide services all over India - for locations beyond 1000 km, custom pricing applies. Please contact us for details."
+  },
+  "instagram": {
+    "heading": "Latest on Instagram",
+    "introPrefix": "Glimpses of divine ceremonies from",
+    "handle": "@ganga_aarati_wedding_event",
+    "handleUrl": "https://www.instagram.com/ganga_aarati_wedding_event",
+    "posts": [
+      "https://www.instagram.com/reel/DbGS4jWSonS/",
+      "https://www.instagram.com/reel/CmQeR_uot-q/",
+      "https://www.instagram.com/reel/DarVvqiSxws/",
+      "https://www.instagram.com/reel/Da-j9uJyeQ3/",
+      "https://www.instagram.com/reel/CmMAVpNA4eD/",
+      "https://www.instagram.com/reel/CmYEdMtI27V/"
+    ],
+    "followText": "📸 \u00a0Follow us on Instagram"
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "intro": "Book your offering or ask us any questions",
+    "person": "Raghavnand Pathak",
+    "address": "Assi Ghat, Varanasi, Uttar Pradesh",
+    "phone": "8957704643",
+    "email": "eventofgangaaarativaranasi@gmail.com",
+    "note": "For bookings and inquiries, click the button below to reach us",
+    "whatsappPhone": "918957704643",
+    "whatsappMessage": "Hello, I am interested in booking for the Ganga Aarti Varanasi ceremony. Please let me know about the available packages and dates.",
+    "social": {
+      "label": "📸 @ganga_aarati_wedding_event",
+      "url": "https://www.instagram.com/ganga_aarati_wedding_event"
+    }
+  },
+  "footer": {
+    "line1": "© 2024 Ganga Aarti Varanasi. All rights reserved. 🙏",
+    "line2": "Experience the divine ceremony of light and devotion at the Sacred Ganges"
+  }
+}
